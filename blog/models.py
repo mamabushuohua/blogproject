@@ -3,7 +3,7 @@ from django.contrib.auth.models import User
 from django.urls import reverse
 import markdown
 from django.utils.html import strip_tags
-from pagedown.widgets import AdminPagedownWidget
+
 
 # Create your models here.
 
