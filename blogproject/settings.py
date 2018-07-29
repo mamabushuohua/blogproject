@@ -168,10 +168,10 @@ if os.getcwd() == '/app':
 
     #只允许Heroku托管这个项目
 
-    ALLOWED_HOSTS = ['wyfblog.herokuapp.com']
+    ALLOWED_HOSTS = ['*']
 
     #安全警告，不要在在线环境中启用调试
-    DEBUG = False
+    #DEBUG = False
 
     #静态资产配置
 
