@@ -1,0 +1,12 @@
+{% load staticfiles %}
+
+<link rel="stylesheet" href="{%static "blog/css/mycss/jblog-admin.css" %}">   
+
+<div class="markdownx row">
+    <div class="col-md-6">
+        {{ markdownx_editor }}
+    </div>
+    <div class="col-md-6">
+        <div class="markdownx-preview"></div>
+    </div>
+</div>
