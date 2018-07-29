@@ -1,5 +1,6 @@
 from django.shortcuts import render, get_object_or_404
 from django.http import HttpResponse
+from django.urls import reverse
 import markdown
 from django.views.generic import ListView, DetailView
 from django.utils.text import slugify
@@ -279,10 +280,13 @@ def search(request):
     if not q:
         error_msg = "请输入关键词"
         context = {'error_msg': error_msg}
-        return render(request, 'blog/index.html', )
+        return render(request, 'blog/index.html' )
 
     post_list = Post.objects.filter(Q(title__icontains=q) | Q(body__icontains=q))
     context = {'error_msg': error_msg, 'post_list': post_list}
     return render(request, 'blog/index.html', context)
     
         
+
+def about(request):
+    return HttpResponse("Welcome to mamabushuohua's blog!")
