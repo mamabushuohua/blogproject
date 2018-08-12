@@ -133,8 +133,6 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
-print('hello')
-print(STATIC_URL)
 
 
 # django-bootstrap3的设置

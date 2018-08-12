@@ -40,9 +40,9 @@ class Post(models.Model):
         return reverse('blog:detail', kwargs={'pk': self.pk})
 
     class Meta:
-        ordering = ['-create_time']
+        ordering = ['-create_time'] # 按时间倒倒序
 
-    def increase_views(self):
+    def increase_views(self):  #阅读量+1
         self.views += 1
         self.save(update_fields=['views'])
 
