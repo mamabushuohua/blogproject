@@ -6,7 +6,6 @@ from django.views.generic import ListView, DetailView
 from django.utils.text import slugify
 from markdown.extensions.toc import TocExtension
 from django.db.models import Q
-from reportlab.pdfgen import canvas
 
 from .models import Post, Category, Tag
 
